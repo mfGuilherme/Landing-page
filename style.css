@@ -1,0 +1,175 @@
+
+header {
+	padding: 15px 0;
+	background: #FFF0F5;
+}
+body {background: #E6E6FA}
+
+.lavanda{width: 6%; }
+h1{font-family: 'Parisienne', cursive;
+	font-size:40px;
+
+}
+
+.caixa {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 55px;
+	padding: 15px ;
+}
+.oq{
+	text-align: center;
+	font-size:  30px;
+}
+.video{
+	width:560px;
+	margin: 1em auto;	
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+.produtos {
+	text-align: center;
+	width: 940px;
+	margin:0 auto;
+	padding:50px 0;
+
+
+}
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin:0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+.produtos li:hover{
+border-color: #c78c79
+
+}
+.produtos li:active {
+	border-color: #8c19c2
+
+}
+.produtos li:hover h3 {
+	font-size: 40px
+}
+
+.produtos h3 {
+	font-size: 30px;
+	font-weight: bold;
+}
+.aroma  {width: 40%;
+
+}
+.oleos{width: 40%}
+
+.descrição{
+	font-size: 18px;
+}
+
+.galeria {	
+	text-align: center;
+	margin:2%;
+	width: 640px;
+	height: 200px; ;
+
+	
+}
+
+.foto {
+	position: absolute;
+	opacity: 0;
+	animation-name:animacao;
+	animation-duration: 20s;
+	animation-iteration-count:infinite ;
+}
+
+@keyframes animacao {
+	25%{opacity:1;
+	transform:scale(1.1,1.1) ;}
+	50%{opacity:0}
+}
+
+.foto:nth-child(1){
+	animation-delay: 3s;
+}
+.foto:nth-child(2){
+	animation-delay: 5s;
+}
+.foto:nth-child(3){
+	animation-delay: 10s;
+}
+.foto:nth-child(4){
+	animation-delay: 15s;}
+
+.reservio-booking-button 	 {
+	text-align: center;
+	margin: 2%;
+
+}
+
+
+.botao{
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	margin:2%;
+
+}
+.click{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-size: 25px;
+	padding: 15px;
+}
+footer {
+	text-align: center;
+	padding: 40px 0;
+	background:#FFF0F5;
+}
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+
+@media screen and (max-width:480px) {
+	.caixa,.video,.copyright{
+		width: auto;
+		text-align:center;
+	}
+	.produtos{
+		display: flex;
+		flex-direction: column;
+
+	}
+	.produtos li {
+		text-align:center;
+
+	}
+	.reservio-booking-button{
+		width: 290px;
+		text-align:center;
+	}
+	.click{
+		width: 290px;
+		text-align:center;
+		font-size:15px;
+	}
+
+	.copyright{
+		width:100%}
+}
